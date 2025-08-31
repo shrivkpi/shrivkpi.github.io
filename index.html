@@ -1,24 +1,161 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>My GitHub Pages Site</title>
-    <style>
-      body { font-family: system-ui, Arial, sans-serif; margin: 2rem; line-height: 1.6; }
-      .card { max-width: 720px; margin: auto; padding: 2rem; border: 1px solid #ddd; border-radius: 14px; }
-      a { text-decoration: none; }
-    </style>
-  </head>
-  <body>
-    <main class="card">
-      <h1>🚀 Hello, world!</h1>
-      <p>Deployed with <strong>GitHub Pages</strong>. Edit <code>index.html</code> to update this page.</p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Academic Webpage</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      display: flex;
+      min-height: 100vh;
+    }
+    .sidebar {
+      width: 220px;
+      padding: 2em 1em;
+      background-color: #f4f4f9;
+      border-right: 1px solid #ddd;
+    }
+    .sidebar h2 {
+      margin-top: 0;
+      font-size: 1.2em;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 0.3em;
+    }
+    .sidebar ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .sidebar li {
+      margin: 0.8em 0;
+    }
+    .sidebar a {
+      text-decoration: none;
+      color: #333;
+    }
+    .sidebar a:hover {
+      color: #0073e6;
+    }
+
+    .main-content {
+      flex: 1;
+      padding: 2em;
+      background-color: #fff;
+    }
+    .hero image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    .hero h1 {
+      margin-top: 0.5em;
+      font-size: 2em;
+    }
+    .hero p {
+      margin-top: 0.5em;
+      color: #555;
+    }
+
+    .section {
+      margin-top: 2em;
+    }
+    .section h2 {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 0.3em;
+    }
+
+    .social-links {
+      margin-top: 2em;
+    }
+    .social-links a {
+      margin-right: 1em;
+      text-decoration: none;
+      color: #333;
+      font-size: 1.2em;
+    }
+    .social-links a:hover {
+      color: #0073e6;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+      .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="sidebar">
+    <h2>My Webpage</h2>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#team">Team Rakshak</a></li>
+      <li><a href="#research">Research Interests</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#notes">Lecture Notes</a></li>
+      <li><a href="#academics">Academics</a></li>
+      <li><a href="#personal">Personal Tips</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="main-content">
+    <section id="home" class="hero">
+      <img src="your-photo.jpg" alt="Me at Ellora Caves">
+      <h1>About Me</h1>
+      <p>Hello! I’m [Your Name], a 3rd-year Aerospace Engineering undergrad at IIT Bombay, originally from Kottayam, Kerala. My lifelong passion for science, flight, and space has guided my journey through academics, and I created this site to share that journey with you. Enjoy exploring!</p>
+    </section>
+
+    <section id="team" class="section">
+      <h2>Team Rakshak</h2>
+      <p>A collaborative UAV team at IIT Bombay focused on building drones and planes for search & rescue operations and mapping initiatives.</p>
+    </section>
+
+    <section id="research" class="section">
+      <h2>Research Interests</h2>
+      <p>Share a brief overview of your research aspirations, key areas of interest, or topics you're currently exploring.</p>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <p>Highlight notable projects like “Garud UAV” prototype or “Skyhawk Drone casing” including your contributions.</p>
+    </section>
+
+    <section id="notes" class="section">
+      <h2>Lecture Notes</h2>
+      <p>Organize your notes by year:</p>
       <ul>
-        <li>Add more pages like <code>about.html</code> and link to them.</li>
-        <li>Put images in a folder like <code>assets/</code>.</li>
+        <li>First Year (2021–22)</li>
+        <li>Second Year (2022–23)</li>
+        <li>Third Year (2023–24)</li>
       </ul>
-      <p><a href="./about.html">Example “About” page (create it!) →</a></p>
-    </main>
-  </body>
+    </section>
+
+    <section id="academics" class="section">
+      <h2>Academics</h2>
+      <p>Fun ideas, extra knowledge, and detailed reviews of courses you’ve done.</p>
+    </section>
+
+    <section id="personal" class="section">
+      <h2>Personal Tips</h2>
+      <p>Share your insights on DAAD intern selection, extra courses at IITB, or anything personal like cooking or life in Europe.</p>
+    </section>
+
+    <section id="contact" class="section social-links">
+      <h2>Connect with Me</h2>
+      <a href="https://instagram.com/your-profile" target="_blank">Instagram</a>
+      <a href="https://linkedin.com/in/your-profile" target="_blank">LinkedIn</a>
+      <a href="mailto:your.email@domain.com">Email</a>
+      <a href="https://github.com/your-username" target="_blank">GitHub</a>
+    </section>
+  </div>
+
+</body>
 </html>
