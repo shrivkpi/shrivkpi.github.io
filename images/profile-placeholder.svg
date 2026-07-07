@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Profile Placeholder</title>
+  <desc id="desc">Simple placeholder image for personal profile photo.</desc>
+  <rect width="800" height="600" fill="#ece8df" />
+  <rect x="250" y="130" width="300" height="300" rx="150" fill="#d6cfbf" />
+  <rect x="170" y="430" width="460" height="80" rx="40" fill="#d6cfbf" />
+  <text x="400" y="560" text-anchor="middle" font-family="Georgia, serif" font-size="26" fill="#6e6657">Replace with your photo</text>
+</svg>

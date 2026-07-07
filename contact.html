@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact page of Your Name.">
+  <title>Contact | Your Name</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600&family=EB+Garamond:opsz,wght@8..72,500;8..72,600;8..72,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-sidebar">
+    <span class="menu-toggle__line"></span>
+    <span class="menu-toggle__line"></span>
+    <span class="menu-toggle__line"></span>
+  </button>
+
+  <div class="mobile-overlay" aria-hidden="true"></div>
+
+  <aside class="sidebar" id="site-sidebar" aria-label="Sidebar navigation">
+    <div class="sidebar__inner">
+      <p class="site-title">Your Name</p>
+      <p class="site-subtitle">Academic Website</p>
+
+      <nav class="nav" aria-label="Main">
+        <ul class="nav__list">
+          <li><a href="index.html" data-page="index.html">Home</a></li>
+          <li><a href="about.html" data-page="about.html">About</a></li>
+          <li><a href="teaching.html" data-page="teaching.html">Teaching</a></li>
+          <li><a href="courses.html" data-page="courses.html">Courses</a></li>
+          <li><a href="blog.html" data-page="blog.html">Blog</a></li>
+          <li><a href="random.html" data-page="random.html">Random Stuff</a></li>
+          <li><a href="contact.html" data-page="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <p class="sidebar-note">
+        <!-- Replace this short line with your affiliation or current role. -->
+        Department / Institute Name
+      </p>
+    </div>
+  </aside>
+
+  <main class="content" id="main-content">
+    <header class="page-header">
+      <h1>Contact</h1>
+      <p>
+        <!-- Replace this with your preferred contact instructions. -->
+        I am happy to connect about research collaborations, teaching, and technical discussions.
+      </p>
+    </header>
+
+    <section class="section-block">
+      <h2>Get in Touch</h2>
+      <p>
+        <!-- Replace this line with your preferred response-time note. -->
+        Email is the best way to reach me for academic and professional communication.
+      </p>
+
+      <div class="contact-panel-grid">
+        <article class="contact-panel">
+          <h3>Primary Contact</h3>
+          <p><strong>Email:</strong> <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+          <p><strong>Affiliation:</strong> <!-- Replace with your affiliation. --> IIT Bombay, Department Name</p>
+          <p><strong>Location:</strong> <!-- Replace with your location. --> Mumbai, India</p>
+        </article>
+
+        <article class="contact-panel">
+          <h3>Professional Profiles</h3>
+          <div class="contact-links">
+            <a href="https://scholar.google.com" target="_blank" rel="noopener noreferrer"><!-- Replace with your Scholar link. -->Google Scholar</a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer"><!-- Replace with your GitHub link. -->GitHub</a>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><!-- Replace with your LinkedIn link. -->LinkedIn</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <h2>Availability</h2>
+      <div class="contact-panel-grid">
+        <article class="contact-panel">
+          <h3>Office Hours</h3>
+          <p><!-- Replace with your office hour details. --> By appointment during weekdays, 10:00-17:00 IST.</p>
+        </article>
+        <article class="contact-panel">
+          <h3>Collaboration Topics</h3>
+          <ul class="list-clean">
+            <li><!-- Replace item text. --> Robotics and autonomy projects</li>
+            <li><!-- Replace item text. --> Systems and control research</li>
+            <li><!-- Replace item text. --> Learning-based planning</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

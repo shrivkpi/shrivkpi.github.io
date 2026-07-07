@@ -2,148 +2,179 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My Academic Webpage</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: system-ui, sans-serif;
-      display: flex;
-      min-height: 100vh;
-    }
-    .sidebar {
-      width: 220px;
-      padding: 2em 1em;
-      background-color: #f4f4f9;
-      border-right: 1px solid #ddd;
-    }
-    .sidebar h2 {
-      margin-top: 0;
-      font-size: 1.2em;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 0.3em;
-    }
-    .sidebar ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    .sidebar li {
-      margin: 0.8em 0;
-    }
-    .sidebar a {
-      text-decoration: none;
-      color: #333;
-    }
-    .sidebar a:hover {
-      color: #0073e6;
-    }
-
-    .main-content {
-      flex: 1;
-      padding: 2em;
-      background-color: #fff;
-    }
-    .hero image {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-    }
-    .hero h1 {
-      margin-top: 0.5em;
-      font-size: 2em;
-    }
-    .hero p {
-      margin-top: 0.5em;
-      color: #555;
-    }
-
-    .section {
-      margin-top: 2em;
-    }
-    .section h2 {
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 0.3em;
-    }
-
-    .social-links {
-      margin-top: 2em;
-    }
-    .social-links a {
-      margin-right: 1em;
-      text-decoration: none;
-      color: #333;
-      font-size: 1.2em;
-    }
-    .social-links a:hover {
-      color: #0073e6;
-    }
-
-    @media (max-width: 768px) {
-      body {
-        flex-direction: column;
-      }
-      .sidebar {
-        width: 100%;
-        border-right: none;
-        border-bottom: 1px solid #ddd;
-      }
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal academic website of Your Name.">
+  <title>Home | Your Name</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600&family=EB+Garamond:opsz,wght@8..72,500;8..72,600;8..72,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-sidebar">
+    <span class="menu-toggle__line"></span>
+    <span class="menu-toggle__line"></span>
+    <span class="menu-toggle__line"></span>
+  </button>
 
-  <nav class="sidebar">
-    <h2>My Webpage</h2>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#research">Research Interests</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#notes">Lecture Notes</a></li>
-      <li><a href="#academics">Academics</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <div class="mobile-overlay" aria-hidden="true"></div>
 
-  <div class="main-content">
-    <section id="home" class="hero">
-      <img src="your-photo.jpg" alt="Add a picture here">
-      <h1>About Me</h1>
-      <p>Hello! I’m Shrivardhan, a 4th-year Aerospace Engineering undergrad at IIT Bombay, originally from Latur, Maharashtra.</p>
+  <aside class="sidebar" id="site-sidebar" aria-label="Sidebar navigation">
+    <div class="sidebar__inner">
+      <p class="site-title">Your Name</p>
+      <p class="site-subtitle">Academic Website</p>
+
+      <nav class="nav" aria-label="Main">
+        <ul class="nav__list">
+          <li><a href="index.html" data-page="index.html">Home</a></li>
+          <li><a href="about.html" data-page="about.html">About</a></li>
+          <li><a href="teaching.html" data-page="teaching.html">Teaching</a></li>
+          <li><a href="courses.html" data-page="courses.html">Courses</a></li>
+          <li><a href="blog.html" data-page="blog.html">Blog</a></li>
+          <li><a href="random.html" data-page="random.html">Random Stuff</a></li>
+          <li><a href="contact.html" data-page="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <p class="sidebar-note">
+        <!-- Replace this short line with your affiliation or current role. -->
+        Department / Institute Name
+      </p>
+    </div>
+  </aside>
+
+  <main class="content" id="main-content">
+    <section class="home-hero" aria-label="Introduction">
+      <div class="home-hero__text">
+        <p class="eyebrow">Graduate Student</p>
+        <h1>Your Name</h1>
+        <p class="home-hero__meta">
+          <!-- Replace with your exact department and institute. -->
+          Indian Institute of Technology Bombay (IIT Bombay)
+        </p>
+        <p class="home-hero__meta">
+          <!-- Replace with your current degree and specialization. -->
+          M.Tech in Aerospace Engineering
+        </p>
+        <p class="home-hero__summary">
+          <!-- Replace with a concise 2-3 sentence research statement. -->
+          I am a graduate student exploring theory and computation for intelligent autonomous systems. My work focuses on building reliable decision-making pipelines that bridge control, planning, and learning in uncertain environments.
+        </p>
+
+        <h2 class="subheading">Research Interests</h2>
+        <ul class="chip-list" aria-label="Research interests as tags">
+          <li>Robotics</li>
+          <li>Systems and Control</li>
+          <li>Optimal Control</li>
+          <li>Motion Planning</li>
+          <li>Machine Learning</li>
+          <li>Computer Vision</li>
+        </ul>
+
+        <div class="action-row" aria-label="External profile links">
+          <a class="btn" href="#" target="_blank" rel="noopener noreferrer"><!-- Replace # with your CV URL. -->CV</a>
+          <a class="btn" href="#" target="_blank" rel="noopener noreferrer"><!-- Replace # with your Google Scholar URL. -->Google Scholar</a>
+          <a class="btn" href="https://github.com" target="_blank" rel="noopener noreferrer"><!-- Replace with your GitHub profile URL. -->GitHub</a>
+          <a class="btn" href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><!-- Replace with your LinkedIn profile URL. -->LinkedIn</a>
+          <a class="btn" href="mailto:youremail@example.com"><!-- Replace with your email address. -->Email</a>
+        </div>
+      </div>
+
+      <figure class="home-hero__photo-wrap">
+        <img src="images/profile-placeholder.svg" alt="Professional profile placeholder" class="home-hero__photo">
+        <figcaption>
+          <!-- Replace with a one-line caption or remove this line. -->
+          Professional headshot
+        </figcaption>
+      </figure>
     </section>
 
-    <section id="research" class="section">
-      <h2>Research Interests</h2>
-      <p>Share a brief overview of your research aspirations, key areas of interest, or topics you're currently exploring.</p>
+    <section class="section-block" aria-labelledby="news-heading">
+      <h2 id="news-heading">News</h2>
+      <ol class="news-list">
+        <li>
+          <span class="news-date"><!-- Replace with date. -->Jul 2026</span>
+          <p><!-- Replace with your latest update. -->Started M.Tech thesis.</p>
+        </li>
+        <li>
+          <span class="news-date"><!-- Replace with date. -->May 2026</span>
+          <p><!-- Replace with your latest update. -->Summer internship.</p>
+        </li>
+        <li>
+          <span class="news-date"><!-- Replace with date. -->Apr 2026</span>
+          <p><!-- Replace with your latest update. -->New blog post.</p>
+        </li>
+        <li>
+          <span class="news-date"><!-- Replace with date. -->Mar 2026</span>
+          <p><!-- Replace with your latest update. -->New lecture notes uploaded.</p>
+        </li>
+      </ol>
     </section>
 
-    <section id="projects" class="section">
-      <h2>Projects</h2>
-      <p>Add projects stuff here</p>
+    <section class="section-block" aria-labelledby="featured-projects-heading">
+      <h2 id="featured-projects-heading">Featured Projects</h2>
+      <div class="project-grid">
+        <article class="project-card">
+          <img src="images/profile-placeholder.svg" alt="Project placeholder image" class="project-card__image">
+          <h3><!-- Replace with project title. -->Project One</h3>
+          <p><!-- Replace with short project summary. -->A short description of the project objective, methods, and outcomes.</p>
+          <a href="#" class="project-link"><!-- Replace # with project URL. -->Read More</a>
+        </article>
+
+        <article class="project-card">
+          <img src="images/profile-placeholder.svg" alt="Project placeholder image" class="project-card__image">
+          <h3><!-- Replace with project title. -->Project Two</h3>
+          <p><!-- Replace with short project summary. -->A short description of the project objective, methods, and outcomes.</p>
+          <a href="#" class="project-link"><!-- Replace # with project URL. -->Read More</a>
+        </article>
+
+        <article class="project-card">
+          <img src="images/profile-placeholder.svg" alt="Project placeholder image" class="project-card__image">
+          <h3><!-- Replace with project title. -->Project Three</h3>
+          <p><!-- Replace with short project summary. -->A short description of the project objective, methods, and outcomes.</p>
+          <a href="#" class="project-link"><!-- Replace # with project URL. -->Read More</a>
+        </article>
+
+        <article class="project-card">
+          <img src="images/profile-placeholder.svg" alt="Project placeholder image" class="project-card__image">
+          <h3><!-- Replace with project title. -->Project Four</h3>
+          <p><!-- Replace with short project summary. -->A short description of the project objective, methods, and outcomes.</p>
+          <a href="#" class="project-link"><!-- Replace # with project URL. -->Read More</a>
+        </article>
+      </div>
     </section>
 
-    <section id="notes" class="section">
-      <h2>Lecture Notes</h2>
-      <p>Maybe I'll add some of mine here</p>
-      <ul>
-        <li>First Year (2021–22)</li>
-        <li>Second Year (2022–23)</li>
-        <li>Third Year (2023–24)</li>
-      </ul>
+    <section class="section-block" aria-labelledby="interest-cards-heading">
+      <h2 id="interest-cards-heading">Research Interests</h2>
+      <div class="interest-grid">
+        <article class="interest-card">
+          <h3>Robotics</h3>
+          <p><!-- Replace with custom text. -->Mechanisms, autonomy, and system-level intelligence for robotic platforms.</p>
+        </article>
+        <article class="interest-card">
+          <h3>Systems and Control</h3>
+          <p><!-- Replace with custom text. -->Modeling and feedback design for stable and high-performance systems.</p>
+        </article>
+        <article class="interest-card">
+          <h3>Optimal Control</h3>
+          <p><!-- Replace with custom text. -->Trajectory optimization and constrained control under real-world limits.</p>
+        </article>
+        <article class="interest-card">
+          <h3>Motion Planning</h3>
+          <p><!-- Replace with custom text. -->Safe and efficient planning algorithms for dynamic environments.</p>
+        </article>
+        <article class="interest-card">
+          <h3>Machine Learning</h3>
+          <p><!-- Replace with custom text. -->Data-driven learning for prediction, adaptation, and robust policies.</p>
+        </article>
+        <article class="interest-card">
+          <h3>Computer Vision</h3>
+          <p><!-- Replace with custom text. -->Perception pipelines for scene understanding and visual decision support.</p>
+        </article>
+      </div>
     </section>
+  </main>
 
-    <section id="academics" class="section">
-      <h2>Academics</h2>
-      <p>Fun ideas, extra knowledge, and detailed reviews of courses you’ve done.</p>
-    </section>
-
-    <section id="contact" class="section social-links">
-      <h2>Connect with Me</h2>
-      <a href="https://in.linkedin.com/in/shrivardhan-kondekar-0a8707321" target="_blank">LinkedIn</a>
-      <a href="https://github.com/shrivkpi" target="_blank">GitHub</a>
-      <a href="mailto:shriv.kondekar@gmail.com">Email</a>
-      <a href="https://www.instagram.com/shriv_kpi/" target="_blank">Instagram</a>
-    </section>
-  </div>
-
+  <script src="js/main.js"></script>
 </body>
 </html>

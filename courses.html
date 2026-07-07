@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Courses page of Your Name.">
+  <title>Key Courses | Your Name</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600&family=EB+Garamond:opsz,wght@8..72,500;8..72,600;8..72,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-sidebar">
+    <span class="menu-toggle__line"></span>
+    <span class="menu-toggle__line"></span>
+    <span class="menu-toggle__line"></span>
+  </button>
+
+  <div class="mobile-overlay" aria-hidden="true"></div>
+
+  <aside class="sidebar" id="site-sidebar" aria-label="Sidebar navigation">
+    <div class="sidebar__inner">
+      <p class="site-title">Your Name</p>
+      <p class="site-subtitle">Academic Website</p>
+
+      <nav class="nav" aria-label="Main">
+        <ul class="nav__list">
+          <li><a href="index.html" data-page="index.html">Home</a></li>
+          <li><a href="about.html" data-page="about.html">About</a></li>
+          <li><a href="teaching.html" data-page="teaching.html">Teaching</a></li>
+          <li><a href="courses.html" data-page="courses.html">Courses</a></li>
+          <li><a href="blog.html" data-page="blog.html">Blog</a></li>
+          <li><a href="random.html" data-page="random.html">Random Stuff</a></li>
+          <li><a href="contact.html" data-page="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <p class="sidebar-note">
+        <!-- Replace this short line with your affiliation or current role. -->
+        Department / Institute Name
+      </p>
+    </div>
+  </aside>
+
+  <main class="content" id="main-content">
+    <header class="page-header">
+      <h1>Key Courses</h1>
+      <p>
+        <!-- Replace this sentence with your own one-line overview. -->
+        Selected coursework that best reflects my preparation for graduate-level research.
+      </p>
+    </header>
+
+    <section class="section-block coursework" aria-labelledby="coursework-heading">
+      <h2 id="coursework-heading">Selected Coursework</h2>
+      <div class="coursework-grid">
+        <section class="coursework-category" aria-labelledby="cat-math">
+          <h3 id="cat-math">Mathematics</h3>
+          <ul class="coursework-list">
+            <li>Real Analysis</li>
+            <li>Measure Theory</li>
+            <li>Functional Analysis</li>
+            <li>Linear Algebra</li>
+            <li>Numerical Analysis</li>
+            <li>Partial Differential Equations</li>
+            <!-- Add or remove mathematics courses here. -->
+          </ul>
+        </section>
+
+        <section class="coursework-category" aria-labelledby="cat-control">
+          <h3 id="cat-control">Systems and Control</h3>
+          <ul class="coursework-list">
+            <li>Signal and Feedback Systems</li>
+            <li>Nonlinear Dynamics</li>
+            <li>Control of Nonlinear Dynamical Systems</li>
+            <li>Optimization</li>
+            <li>Optimal Control Systems</li>
+            <li>Estimation on Lie Groups</li>
+            <!-- Add or remove systems and control courses here. -->
+          </ul>
+        </section>
+
+        <section class="coursework-category" aria-labelledby="cat-ae">
+          <h3 id="cat-ae">Aerospace Engineering</h3>
+          <ul class="coursework-list">
+            <li>Flight Mechanics</li>
+            <li>Aerodynamics</li>
+            <li>Aircraft Design</li>
+            <li>Navigation and Guidance</li>
+            <li>Compressible Fluid Mechanics</li>
+            <li>Aircraft Propulsion</li>
+            <li>Modeling and Simulation</li>
+            <!-- Add or remove aerospace courses here. -->
+          </ul>
+        </section>
+
+        <section class="coursework-category" aria-labelledby="cat-mlcv">
+          <h3 id="cat-mlcv">Machine Learning and Computer Vision</h3>
+          <ul class="coursework-list">
+            <li>Machine Learning</li>
+            <li>Statistical Learning</li>
+            <li>Probabilistic Graphical Models</li>
+            <li>Computer Vision</li>
+            <li>Deep Learning</li>
+            <li>Pattern Recognition</li>
+            <!-- Add or remove ML/CV courses here. -->
+          </ul>
+        </section>
+
+        <section class="coursework-category" aria-labelledby="cat-robotics">
+          <h3 id="cat-robotics">Robotics and Autonomous Systems</h3>
+          <ul class="coursework-list">
+            <li>Introduction to Robotics</li>
+            <li>Robot Kinematics and Dynamics</li>
+            <li>Autonomous Navigation</li>
+            <li>Motion Planning</li>
+            <li>State Estimation for Robotics</li>
+            <li>Multi-Agent Systems</li>
+            <!-- Add or remove robotics courses here. -->
+          </ul>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

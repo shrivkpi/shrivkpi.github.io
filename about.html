@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About page of Your Name.">
+  <title>About | Your Name</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600&family=EB+Garamond:opsz,wght@8..72,500;8..72,600;8..72,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-sidebar">
+    <span class="menu-toggle__line"></span>
+    <span class="menu-toggle__line"></span>
+    <span class="menu-toggle__line"></span>
+  </button>
+
+  <div class="mobile-overlay" aria-hidden="true"></div>
+
+  <aside class="sidebar" id="site-sidebar" aria-label="Sidebar navigation">
+    <div class="sidebar__inner">
+      <p class="site-title">Your Name</p>
+      <p class="site-subtitle">Academic Website</p>
+
+      <nav class="nav" aria-label="Main">
+        <ul class="nav__list">
+          <li><a href="index.html" data-page="index.html">Home</a></li>
+          <li><a href="about.html" data-page="about.html">About</a></li>
+          <li><a href="teaching.html" data-page="teaching.html">Teaching</a></li>
+          <li><a href="courses.html" data-page="courses.html">Courses</a></li>
+          <li><a href="blog.html" data-page="blog.html">Blog</a></li>
+          <li><a href="random.html" data-page="random.html">Random Stuff</a></li>
+          <li><a href="contact.html" data-page="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <p class="sidebar-note">
+        <!-- Replace this short line with your affiliation or current role. -->
+        Department / Institute Name
+      </p>
+    </div>
+  </aside>
+
+  <main class="content" id="main-content">
+    <header class="page-header">
+      <h1>About</h1>
+      <p>
+        <!-- Replace this with a concise introduction and your research identity. -->
+        I am a graduate student at IIT Bombay working at the intersection of control, planning, and intelligent systems.
+      </p>
+    </header>
+
+    <section class="section-block">
+      <h2>Biography</h2>
+      <p>
+        <!-- Replace this paragraph with your personal biography. -->
+        Write a short narrative about your background, your motivation for graduate research, and the themes that connect your work.
+      </p>
+      <p>
+        <!-- Replace this paragraph with your current goals and long-term direction. -->
+        Add one paragraph on what you are currently building and one line on your long-term academic or industry goals.
+      </p>
+    </section>
+
+    <section class="section-block">
+      <h2>Education</h2>
+      <ul class="list-clean">
+        <li><!-- Replace with your current degree information. --> M.Tech in Aerospace Engineering, IIT Bombay (Year-Year)</li>
+        <li><!-- Replace with undergraduate degree information. --> B.Tech in Aerospace Engineering, Institute Name (Year-Year)</li>
+      </ul>
+    </section>
+
+    <section class="section-block">
+      <h2>Research Focus</h2>
+      <p>
+        <!-- Replace this with your current research focus. -->
+        Use this space to summarize your thesis topic, target applications, and the methods you are currently using.
+      </p>
+      <div class="chip-list" aria-label="Research keywords">
+        <span>Robotics</span>
+        <span>Systems and Control</span>
+        <span>Optimal Control</span>
+        <span>Motion Planning</span>
+        <span>Machine Learning</span>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <h2>Academic Snapshot</h2>
+      <div class="card-grid card-grid--tight">
+        <article class="card">
+          <h3>Current Work</h3>
+          <p><!-- Replace with current project summary. --> Brief summary of your active thesis or lab project.</p>
+        </article>
+        <article class="card">
+          <h3>Collaborations</h3>
+          <p><!-- Replace with collaborations or lab groups. --> Mention labs, mentors, or collaborators you work with.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

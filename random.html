@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Random stuff page of Your Name.">
+  <title>Random Stuff | Your Name</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600&family=EB+Garamond:opsz,wght@8..72,500;8..72,600;8..72,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-sidebar">
+    <span class="menu-toggle__line"></span>
+    <span class="menu-toggle__line"></span>
+    <span class="menu-toggle__line"></span>
+  </button>
+
+  <div class="mobile-overlay" aria-hidden="true"></div>
+
+  <aside class="sidebar" id="site-sidebar" aria-label="Sidebar navigation">
+    <div class="sidebar__inner">
+      <p class="site-title">Your Name</p>
+      <p class="site-subtitle">Academic Website</p>
+
+      <nav class="nav" aria-label="Main">
+        <ul class="nav__list">
+          <li><a href="index.html" data-page="index.html">Home</a></li>
+          <li><a href="about.html" data-page="about.html">About</a></li>
+          <li><a href="teaching.html" data-page="teaching.html">Teaching</a></li>
+          <li><a href="courses.html" data-page="courses.html">Courses</a></li>
+          <li><a href="blog.html" data-page="blog.html">Blog</a></li>
+          <li><a href="random.html" data-page="random.html">Random Stuff</a></li>
+          <li><a href="contact.html" data-page="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <p class="sidebar-note">
+        <!-- Replace this short line with your affiliation or current role. -->
+        Department / Institute Name
+      </p>
+    </div>
+  </aside>
+
+  <main class="content" id="main-content">
+    <header class="page-header">
+      <h1>Random Stuff</h1>
+      <p>
+        <!-- Replace this with a short personal line about your non-academic interests. -->
+        A small personal journal of moments, music, and hobbies outside the lab.
+      </p>
+    </header>
+
+    <section class="section-block" aria-labelledby="photography-heading">
+      <h2 id="photography-heading">Photography</h2>
+      <p>
+        <!-- Replace this text with your own note about photography interests. -->
+        Frames from walks, travel, and quiet everyday moments.
+      </p>
+
+      <div class="photo-gallery" aria-label="Photography gallery">
+        <figure class="photo-item photo-item--tall">
+          <!-- Replace src with your own image in images/ and update caption as needed. -->
+          <img src="images/profile-placeholder.svg" alt="Placeholder photo 1">
+          <figcaption>Golden light over campus courtyard.</figcaption>
+        </figure>
+
+        <figure class="photo-item">
+          <!-- Replace src with your own image in images/ and update caption as needed. -->
+          <img src="images/profile-placeholder.svg" alt="Placeholder photo 2">
+          <figcaption>Monsoon clouds gathering above the city skyline.</figcaption>
+        </figure>
+
+        <figure class="photo-item photo-item--wide">
+          <!-- Replace src with your own image in images/ and update caption as needed. -->
+          <img src="images/profile-placeholder.svg" alt="Placeholder photo 3">
+          <figcaption>Street textures and evening shadows.</figcaption>
+        </figure>
+
+        <figure class="photo-item">
+          <!-- Replace src with your own image in images/ and update caption as needed. -->
+          <img src="images/profile-placeholder.svg" alt="Placeholder photo 4">
+          <figcaption>Minimal geometry and color in architecture.</figcaption>
+        </figure>
+
+        <figure class="photo-item photo-item--tall">
+          <!-- Replace src with your own image in images/ and update caption as needed. -->
+          <img src="images/profile-placeholder.svg" alt="Placeholder photo 5">
+          <figcaption>Night reflections after rain.</figcaption>
+        </figure>
+
+        <figure class="photo-item">
+          <!-- Replace src with your own image in images/ and update caption as needed. -->
+          <img src="images/profile-placeholder.svg" alt="Placeholder photo 6">
+          <figcaption>Weekend hill trail and soft horizon.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section-block" aria-labelledby="guitar-heading">
+      <h2 id="guitar-heading">Guitar Recordings</h2>
+      <p>
+        <!-- Replace this note if needed. Paste Instagram embed code inside each card below. -->
+        Short recordings and reels embedded directly from Instagram.
+      </p>
+
+      <div class="recording-grid" aria-label="Instagram guitar recordings">
+        <article class="recording-card">
+          <div class="recording-embed-wrap">
+            <!-- Replace this blockquote with embed code from your Instagram Reel or video post. -->
+            <!-- Keep the surrounding recording-embed-wrap container for responsive behavior. -->
+            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/REPLACE_WITH_YOUR_POST_1/" data-instgrm-version="14" style="margin: 0 auto; max-width: 540px; width: 100%;">
+              <a href="https://www.instagram.com/reel/REPLACE_WITH_YOUR_POST_1/">View this post on Instagram</a>
+            </blockquote>
+          </div>
+          <h3><!-- Replace with recording title. --> Fingerstyle Practice Session</h3>
+          <p class="recording-date"><!-- Replace with recording date. --> July 2026</p>
+          <p><!-- Replace with short description. --> A short acoustic arrangement with alternate bass and melody lines.</p>
+        </article>
+
+        <article class="recording-card">
+          <div class="recording-embed-wrap">
+            <!-- Replace this blockquote with embed code from your Instagram Reel or video post. -->
+            <!-- Keep the surrounding recording-embed-wrap container for responsive behavior. -->
+            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/REPLACE_WITH_YOUR_POST_2/" data-instgrm-version="14" style="margin: 0 auto; max-width: 540px; width: 100%;">
+              <a href="https://www.instagram.com/reel/REPLACE_WITH_YOUR_POST_2/">View this post on Instagram</a>
+            </blockquote>
+          </div>
+          <h3><!-- Replace with recording title. --> Evening Blues Improv</h3>
+          <p class="recording-date"><!-- Replace with recording date. --> June 2026</p>
+          <p><!-- Replace with short description. --> Slow-tempo improvisation focused on phrasing and dynamics.</p>
+        </article>
+
+        <article class="recording-card">
+          <div class="recording-embed-wrap">
+            <!-- Replace this blockquote with embed code from your Instagram Reel or video post. -->
+            <!-- Keep the surrounding recording-embed-wrap container for responsive behavior. -->
+            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/REPLACE_WITH_YOUR_POST_3/" data-instgrm-version="14" style="margin: 0 auto; max-width: 540px; width: 100%;">
+              <a href="https://www.instagram.com/reel/REPLACE_WITH_YOUR_POST_3/">View this post on Instagram</a>
+            </blockquote>
+          </div>
+          <h3><!-- Replace with recording title. --> Melody and Harmony Study</h3>
+          <p class="recording-date"><!-- Replace with recording date. --> May 2026</p>
+          <p><!-- Replace with short description. --> A layered practice clip exploring chord melody voicing.</p>
+        </article>
+      </div>
+
+      <p class="recording-note">
+        <!-- Duplicate one recording-card block above to add more entries. -->
+        Add more recordings by duplicating a card and replacing permalink, title, date, and description.
+      </p>
+    </section>
+  </main>
+
+  <script async src="https://www.instagram.com/embed.js"></script>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

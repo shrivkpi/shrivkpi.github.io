@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Teaching page of Your Name.">
+  <title>Teaching | Your Name</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600&family=EB+Garamond:opsz,wght@8..72,500;8..72,600;8..72,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-sidebar">
+    <span class="menu-toggle__line"></span>
+    <span class="menu-toggle__line"></span>
+    <span class="menu-toggle__line"></span>
+  </button>
+
+  <div class="mobile-overlay" aria-hidden="true"></div>
+
+  <aside class="sidebar" id="site-sidebar" aria-label="Sidebar navigation">
+    <div class="sidebar__inner">
+      <p class="site-title">Your Name</p>
+      <p class="site-subtitle">Academic Website</p>
+
+      <nav class="nav" aria-label="Main">
+        <ul class="nav__list">
+          <li><a href="index.html" data-page="index.html">Home</a></li>
+          <li><a href="about.html" data-page="about.html">About</a></li>
+          <li><a href="teaching.html" data-page="teaching.html">Teaching</a></li>
+          <li><a href="courses.html" data-page="courses.html">Courses</a></li>
+          <li><a href="blog.html" data-page="blog.html">Blog</a></li>
+          <li><a href="random.html" data-page="random.html">Random Stuff</a></li>
+          <li><a href="contact.html" data-page="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <p class="sidebar-note">
+        <!-- Replace this short line with your affiliation or current role. -->
+        Department / Institute Name
+      </p>
+    </div>
+  </aside>
+
+  <main class="content" id="main-content">
+    <header class="page-header">
+      <h1>Teaching</h1>
+      <p>
+        <!-- Replace this line with a short overview of your TA work. -->
+        This page summarizes my Teaching Assistantship (TAship) experience.
+      </p>
+    </header>
+
+    <section class="section-block">
+      <h2>Teaching Assistance (TAships)</h2>
+      <p>
+        <!-- Replace this paragraph with your TAship philosophy or role summary. -->
+        I support students through tutorial sessions, assignment guidance, and exam preparation.
+      </p>
+      <div class="card-grid card-grid--tight">
+        <article class="card">
+          <h3><!-- Replace with course code/title. --> TAship 1</h3>
+          <p><strong>Term:</strong> <!-- Replace with semester and year. --> Semester X, Year</p>
+          <p><strong>Course:</strong> <!-- Replace with course details. --> Course Name</p>
+          <p><strong>Instructor:</strong> <!-- Replace with instructor name. --> Professor Name</p>
+          <p><strong>Responsibilities:</strong> <!-- Replace with responsibilities. --> Conducted tutorials, held office hours, and supported grading.</p>
+        </article>
+
+        <article class="card">
+          <h3><!-- Replace with course code/title. --> TAship 2</h3>
+          <p><strong>Term:</strong> <!-- Replace with semester and year. --> Semester X, Year</p>
+          <p><strong>Course:</strong> <!-- Replace with course details. --> Course Name</p>
+          <p><strong>Instructor:</strong> <!-- Replace with instructor name. --> Professor Name</p>
+          <p><strong>Responsibilities:</strong> <!-- Replace with responsibilities. --> Designed practice sets and mentored project teams.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
